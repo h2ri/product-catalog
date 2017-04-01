@@ -15,7 +15,6 @@ require_relative "../../../../app/concepts/product/operations/create"
     let (:pass_with_no_manufacture_and_no_category) { { Product: { name:"Crocin" }  } }
 
     it "works with all params" do
-      puts pass_params.inspect
       result = Product::Operations::Create.(pass_params)
 
       expect(result).to be_success
@@ -43,7 +42,6 @@ require_relative "../../../../app/concepts/product/operations/create"
     it "works with correct manufacturer and category id" do
 
       result = Product::Operations::Create.(pass_with_manufacture_and_category)
-      #puts result.inspect
       expect(result).to be_success
 
     end

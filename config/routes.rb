@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   end
 
   resources :categories
+  
+  resources :medicines
 
 end

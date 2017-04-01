@@ -1,7 +1,7 @@
-module Manufacturer::Operations
+module Medicine::Operations
 
   class Show < Trailblazer::Operation
-    step Model(Manufacturer, :find_by)
+    step Model(Medicine, :find_by)
   end
 
 end

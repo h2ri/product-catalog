@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
   def create
+
+    #Product.create_with
     pass_params = { Product: params}
     result = Product::Operations::Create.(pass_params)
     #puts result.inspect
